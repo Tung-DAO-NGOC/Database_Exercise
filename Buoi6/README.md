@@ -9,7 +9,7 @@
 - Liệt kê danh sách độc giả đang mượn sách
 
   ```sql
-  SELECT reader.name FROM reader
+  SELECT reader.name AS Reader_Name FROM reader
   INNER JOIN rent_form ON reader.id = rent_form.id_reader
   GROUP BY rent_form.id_reader;
   ```
